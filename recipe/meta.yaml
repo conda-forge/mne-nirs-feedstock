@@ -1,5 +1,5 @@
 {% set name = "mne-nirs" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eb11ed5fc990a2a3a5c71bf96e4a6414aff668757dfe3821bc31584554a00304
+  sha256: 11a96035447f205ef518c2443351864e69da45d20713c6679f764776b18645e3
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Process Near-Infrared Spectroscopy Data in MNE.'
+  summary: Process Near-Infrared Spectroscopy Data in MNE.
   doc_url: https://mne.tools/mne-nirs
   dev_url: https://github.com/mne-tools/mne-nirs
 
