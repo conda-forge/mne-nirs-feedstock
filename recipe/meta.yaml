@@ -1,5 +1,5 @@
 {% set name = "mne-nirs" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 11a96035447f205ef518c2443351864e69da45d20713c6679f764776b18645e3
+  sha256: ac11a80aa368d6af1884811ae925a8b677e5e391f16fd05e2b39dfcb59f2a6c7
 
 build:
   noarch: python
