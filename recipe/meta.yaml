@@ -20,10 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - mne
+    - mne >=0.24
     - ipyvtklink
     - seaborn
     - statsmodels
+    - h5io >=0.1.7
 
 test:
   imports:
