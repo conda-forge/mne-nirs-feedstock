@@ -45,5 +45,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - larsoner
     - rob-luke
     - hoechenberger
