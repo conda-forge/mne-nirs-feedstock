@@ -121,5 +121,6 @@ Feedstock Maintainers
 =====================
 
 * [@hoechenberger](https://github.com/hoechenberger/)
+* [@larsoner](https://github.com/larsoner/)
 * [@rob-luke](https://github.com/rob-luke/)
 
