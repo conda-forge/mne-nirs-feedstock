@@ -1,5 +1,5 @@
 {% set name = "mne-nirs" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac11a80aa368d6af1884811ae925a8b677e5e391f16fd05e2b39dfcb59f2a6c7
+  sha256: 3f86916b6355209fc966a72dff993d5de807c4bea1e953f7274b3afaa856b920
 
 build:
   noarch: python
@@ -20,10 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - mne
+    - mne >=0.24
     - ipyvtklink
     - seaborn
     - statsmodels
+    - h5io >=0.1.7
 
 test:
   imports:
