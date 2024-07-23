@@ -16,11 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.8
-    - mne-base >=0.24
+    - python >=3.9
+    - mne-base >=1.0
     - ipyvtklink
     - seaborn
     - statsmodels
@@ -34,6 +36,7 @@ test:
     - pip
   commands:
     - pip check
+    - python -c "import mne_nirs; assert mne_nirs.__version__ == '{{ version }}', mne_nirs.__version__"
 
 about:
   home: https://mne.tools/mne-nirs
